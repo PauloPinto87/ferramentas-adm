@@ -16,37 +16,74 @@
     <header>
 
     </header>
-    <section class="section-contas-distribuidor" onchange="somarInputs()">
-            <div class="box-divs-input">
-                <div class="box-label-input">
-                    <label for="">Valor (total em pedidos) €</label>
-                    <input type="number" name="" id="">
-                </div>
-                <div class="box-label-input">
-                    <label for="">Trocos €</label>
-                    <input type="number" name="" id="">
-                    <button>inserir/calcular trocos</button>
-                </div>
-                <div class="box-label-input">
-                <label for="">Gastos (MB) €</label>
-                <input type="number" name="" id="">
-                </div>
-                <div class="box-label-input">
-                <label for="">Outros €</label>
-                <input type="number" name="" id="">
-                </div>
-                <div class="box-label-input">
-                <label for="">Uber €</label>
-                <input type="number" name="" id="">
-                </div>
-                <div class="box-label-input">
-                <label for="">Glovo €</label>
-                <input type="number" name="" id="">
-                </div>
-                <div class="box-label-input">
-                <label for="">Gasolina €</label>
+    <section class="section-contas-distribuidor">
+        <dialog class="modal" id="modal" onchange="somarTrocos()">
+            <div class="box-troco">
+                <label for="1ºTroco">1ºTroco</label>
+                <input type="number" name="" id="1ºTroco">
+            </div>
+            <div class="box-troco">
+            <label for="">2ºTroco</label>
+            <input type="number" name="" id="2ºTroco">
+        </div>
+        <div class="box-troco">
+            <label for="">3ºTroco</label>
+            <input type="number" name="" id="3ºTroco">
+        </div>
+        <div class="box-troco">
+            <label for="">4ºTroco</label>
+            <input type="number" name="" id="4ºTroco">
+        </div>
+        <div class="box-troco">
+            <label for="">5ºTroco</label>
+            <input type="number" name="" id="5ºTroco">
+        </div>
+        <div class="box-troco">
+            <label for="">6ºTroco</label>
+            <input type="number" name="" id="6ºTroco">
+        </div>
+        <div class="box-troco">
+            <label for="">7ºTroco</label>
+            <input type="number" name="" id="7ºTroco">
+        </div>
+        <div class="box-troco">
+            <label for="">8ºTroco</label>
+            <input type="number" name="" id="8ºTroco">
+        </div>
+        <button class="close-button" onclick="somarTrocos()">Somar trocos e fechar</button>
+            <p id="totalTrocos">€</p>      
+
+        </dialog>
+        <div class="box-divs-input">
+            <div class="box-label-input">
+                <label for="">Valor (total em pedidos) €</label>
                 <input type="number" name="" id="">
             </div>
+            <div class="box-label-input">
+                <label for="Trocos">Trocos €</label>
+                <input type="number" name="" id="Trocos">
+                <button class="open-button">inserir/calcular trocos</button>
+            </div>
+            <div class="box-label-input">
+            <label for="Gastos">Gastos (MB) €</label>
+            <input type="number" name="" id="Gastos">
+            </div>
+            <div class="box-label-input">
+            <label for="Outros">Outros €</label>
+            <input type="number" name="" id="Outros">
+            </div>
+            <div class="box-label-input">
+            <label for="Uber">Uber €</label>
+            <input type="number" name="" id="Uber">
+            </div>
+            <div class="box-label-input">
+            <label for="Glovo">Glovo €</label>
+            <input type="number" name="" id="Glovo">
+            </div>
+            <div class="box-label-input">
+            <label for="Gasolina">Gasolina €</label>
+            <input type="number" name="" id="Gasolina">
+        </div>
         <div class="box-resultado-contas">
             <p id="resMsg">€</p>
             <p id="resConta" class="piscar-resultado-alerta"></p>

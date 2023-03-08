@@ -1,3 +1,31 @@
+const modal = document.querySelector('#modal')
+const openModal = document.querySelector('.open-button')
+const closeModal = document.querySelector('.close-button')
+
+openModal.addEventListener('click', () => {
+    modal.show()
+})
+
+closeModal.addEventListener('click', () => {
+    modal.close()
+})
+
+function somarTrocos (){
+    var inputTroco = document.getElementById('modal').childNodes
+    var totalTrocos = document.getElementById('totalTrocos')
+    var somaTroco = 0
+
+
+    for (passo = 1; passo < inputTroco.length-4; passo = passo + 2) {
+        somaTroco = somaTroco + Number(inputTroco[passo].childNodes[3].value)
+
+        console.log(somaTroco)
+
+    }
+
+    totalTrocos.innerHTML = `€ ${somaTroco.toFixed(2)}`
+}
+
 function somarInputs(){
     var inputValor = document.getElementsByTagName('input')
     var resSoma = document.getElementById('resConta')
@@ -30,10 +58,8 @@ function somarInputs(){
         resSoma.style.color = 'green'
         resSoma.classList.add('green')
         resSoma.classList.remove('yellow', 'red')
-    }
-    
-  
-  
+    }  
 }
+
 
     

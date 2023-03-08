@@ -120,14 +120,14 @@ label {
 
 @keyframes neon {
     from {
-        filter: drop-shadow(0 0 1px var(--cor--neon))
+        filter: drop-shadow(0 0 5px var(--cor--neon))
     }
     to {
-        filter: drop-shadow(0 0 3px var(--cor--neon))
+        filter: drop-shadow(0 0 10px var(--cor--neon))
     }
 }
 .piscar-resultado-alerta{
-    animation: neon 0.3s alternate infinite ease-in-out;
+    animation: neon 0.2s alternate infinite ease-in-out;
 }
 .red {
     --cor--neon: red;
@@ -139,3 +139,30 @@ label {
     --cor--neon: green;
 }
 
+/* Modal */
+
+.modal {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+/*     display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.modal input{
+    width: 30%;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.301);
+    margin-top: 5px;
+}
+
+.modal button {
+    margin-top: 5px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.479);
+}
+.modal p {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
