@@ -20,6 +20,7 @@ body {
 section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
     width: 90%;
@@ -28,27 +29,34 @@ section {
     border-radius: 20px;
 }
 
-section > a{
+.container-inex > a{
     background-color: #7EA928;
     padding: 10px 0px;
     border-radius: 5px;
     text-align: center;
 }
 
-a, input{
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.479);
+.container-index > a, input{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.226);
     border: none;
     outline: none;
 }
 
-button {
+.container-index a, button {
+    width: 70%;
+
     background-color: #7EA928;
     border: none;
     color: white;
     font-size: 15px;
     font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+
+    text-decoration: none;
+    text-align: center;
 }
-button:hover {
+a:hover {
     cursor: pointer;
 }
 
@@ -64,6 +72,7 @@ input {
     height: 35px;
     text-align: center;
     font-weight: 600;
+    font-size: 20px;
     border-radius: 10px;
 }
 
@@ -72,6 +81,14 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.box-label-input button{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.479);
 }
 
 label {
@@ -84,3 +101,41 @@ label {
     font-size: 15px;
     color: #7EA928;
 }
+
+#resMsg {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#resConta {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.section-contas-distribuidor button {
+    padding: 3px;
+    width: 60%;
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 1px var(--cor--neon))
+    }
+    to {
+        filter: drop-shadow(0 0 3px var(--cor--neon))
+    }
+}
+.piscar-resultado-alerta{
+    animation: neon 0.3s alternate infinite ease-in-out;
+}
+.red {
+    --cor--neon: red;
+}
+.yellow {
+    --cor--neon: #B8860B;
+}
+.green {
+    --cor--neon: green;
+}
+
