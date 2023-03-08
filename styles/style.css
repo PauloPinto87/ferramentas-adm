@@ -93,29 +93,29 @@ input {
 
 label {
     font-weight: 600;
-}
-
-.icone-voltar > a > i {
-    margin-top: 50px;
-    background-color: transparent;
-    font-size: 15px;
-    color: #7EA928;
+    margin-bottom: 3px;
 }
 
 #resMsg {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 20px;
 }
 #resConta {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .section-contas-distribuidor button {
     padding: 3px;
     width: 60%;
+}
+
+.box-icone-voltar > a > i {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #7EA928;
 }
 
 @keyframes neon {
