@@ -17,38 +17,42 @@
 
     </header>
     <section class="section-contas-distribuidor">
-        <form action="">
-            <div class="box-label-input">
-                <label for="">Trocos €</label>
+            <div class="box-divs-input">
+                <div class="box-label-input">
+                    <label for="">Trocos €</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div class="box-label-input">
+                <label for="">Gastos (MB) €</label>
+                <input type="number" name="" id="">
+                </div>
+                <div class="box-label-input">
+                <label for="">Outros €</label>
+                <input type="number" name="" id="">
+                </div>
+                <div class="box-label-input">
+                <label for="">Uber €</label>
+                <input type="number" name="" id="">
+                </div>
+                <div class="box-label-input">
+                <label for="">Glovo €</label>
+                <input type="number" name="" id="">
+                </div>
+                <div class="box-label-input">
+                <label for="">Gasolina €</label>
                 <input type="number" name="" id="">
             </div>
-            <div class="box-label-input">
-            <label for="">Gastos (MB) €</label>
-            <input type="number" name="" id="">
-            </div>
-            <div class="box-label-input">
-            <label for="">Outros €</label>
-            <input type="number" name="" id="">
-            </div>
-            <div class="box-label-input">
-            <label for="">Uber €</label>
-            <input type="number" name="" id="">
-            </div>
-            <div class="box-label-input">
-            <label for="">Glovo €</label>
-            <input type="number" name="" id="">
-            </div>
-            <div class="box-label-input">
-            <label for="">Gasolina €</label>
-            <input type="number" name="" id="">
-        </form>
+        <div class="box-resultado-contas">
+            <p id="res-conta">€</p>
+        </div>
         <div class="icone-voltar">
             <a href="index.html"><i class="fa-solid fa-circle-chevron-left">Voltar</i></a>
         </div>
+        <button onclick="somarInputs()">somar</button>
     </section>
     <footer>
 
     </footer>
-    
+    <script src="scripts/main.js"></script>
 </body>
 </html>
