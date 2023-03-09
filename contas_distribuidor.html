@@ -17,68 +17,131 @@
 
     </header>
     <section class="section-contas-distribuidor">
-        <dialog class="modal" id="modal" onchange="somarTrocos()">
+        <dialog class="modalTrocos" id="modalTrocos" onchange="somarTrocos()">
             <div class="box-troco">
                 <label for="1ºTroco">1ºTroco</label>
                 <input type="number" name="" id="1ºTroco">
             </div>
             <div class="box-troco">
-            <label for="">2ºTroco</label>
+            <label for="2ºTroco">2ºTroco</label>
             <input type="number" name="" id="2ºTroco">
         </div>
         <div class="box-troco">
-            <label for="">3ºTroco</label>
+            <label for="3ºTroco">3ºTroco</label>
             <input type="number" name="" id="3ºTroco">
         </div>
         <div class="box-troco">
-            <label for="">4ºTroco</label>
+            <label for="4ºTroco">4ºTroco</label>
             <input type="number" name="" id="4ºTroco">
         </div>
         <div class="box-troco">
-            <label for="">5ºTroco</label>
+            <label for="5ºTroco">5ºTroco</label>
             <input type="number" name="" id="5ºTroco">
         </div>
 
-        <button class="close-button" onclick="somarTrocos()">Somar trocos e fechar</button>
+        <button class="close-button-Trocos" onclick="somarTrocos()">Somar trocos e fechar</button>
             <p id="totalTrocos">€</p>      
 
         </dialog>
+        <dialog class="modalUbers" id="modalUbers" onchange="somarUbers()">
+            <div class="box-Ubers">
+                <label for="1ºUber">1ºUber</label>
+                <input type="number" name="" id="1ºUber">
+            </div>
+            <div class="box-Ubers">
+                <label for="2ºUber">2ºUber</label>
+                <input type="number" name="" id="2ºUber">
+            </div>
+            <div class="box-Ubers">
+                <label for="3ºUber">3ºUber</label>
+                <input type="number" name="" id="3ºUber">
+            </div>
+            <div class="box-Ubers">
+                <label for="4ºUber">4ºUber</label>
+                <input type="number" name="" id="4ºUber">
+            </div>
+            <div class="box-Ubers">
+                <label for="5ºUber">5ºUber</label>
+                <input type="number" name="" id="5ºUber">
+            </div>
+            <button class="close-button-Ubers" onclick="somarUbers()">Somar Ubers e fechar</button>
+            <p id="totalUbers">€</p>      
+        </dialog>
+        <dialog class="modalGlovos" id="modalGlovos" onchange="somarGlovos()">
+            <div class="box-glovo">
+                <label for="1ºGlovo">1ºGlovo</label>
+                <input type="number" name="" id="1ºGlovo">
+            </div>
+            <div class="box-glovo">
+            <label for="2ºGlovo">2ºGlovo</label>
+            <input type="number" name="" id="2ºGlovo">
+        </div>
+        <div class="box-glovo">
+            <label for="3ºGlovo">3ºGlovo</label>
+            <input type="number" name="" id="3ºGlovo">
+        </div>
+        <div class="box-glovo">
+            <label for="4ºGlovo">4ºGlovo</label>
+            <input type="number" name="" id="4ºGlovo">
+        </div>
+        <div class="box-glovo">
+            <label for="5ºGlovo">5ºGlovo</label>
+            <input type="number" name="" id="5ºGlovo">
+        </div>
+
+        <button class="close-button-Glovos" onclick="somarGlovos()">Somar GLOVOS e fechar</button>
+            <p id="totalGlovos">€</p>      
+
+        </dialog>
+
         <div class="box-divs-input">
             <div class="box-label-input">
-                <label for="">Valor (total em pedidos) €</label>
-                <input type="number" name="" id="">
+                <label for="Valor">Valor (total em pedidos) €</label>
+                <input type="number" name="" id="Valor">
             </div>
             <div class="box-label-input">
                 <label for="Trocos">Trocos €</label>
                 <input type="number" name="" id="Trocos">
-                <button class="open-button">inserir/calcular trocos</button>
+                <button class="open-button-Trocos">inserir/calcular trocos</button>
+            </div>
+            <div class="box-label-input hide">
+                <label for="">Pedidos trocados €</label>
+                <input type="number" name="" id="">
+<!--                 <div>
+                    <label for="FEZ">FEZ</label>
+                    <input type="radio" name="pedidoTrocado" id="FEZ" checked>
+                    <label for="NÃO FEZ">NÃO FEZ</label>
+                    <input type="radio" name="pedidoTrocado" id="NÃO FEZ">
+                </div> -->
             </div>
             <div class="box-label-input">
-            <label for="Gastos">Gastos (MB) €</label>
-            <input required type="number" name="" id="Gastos">
+                <label for="Gastos">Gastos (MB) €</label>
+                <input required type="number" name="" id="Gastos">
             </div>
-            <div class="box-label-input">
-            <label for="Outros">Outros €</label>
+                <div class="box-label-input">
+                <label for="Outros">Outros €</label>
             <input  required type="number" name="" id="Outros">
             </div>
             <div class="box-label-input">
-            <label for="Uber">Uber €</label>
-            <input  required type="number" name="" id="Uber">
+                <label for="Uber">Uber €</label>
+                <input  required type="number" name="" id="Uber">
+                <button class="open-button-Ubers">inserir/calcular Ubers</button>
             </div>
             <div class="box-label-input">
-            <label for="Glovo">Glovo €</label>
-            <input  required type="number" name="" id="Glovo">
+                <label for="Glovo">Glovo €</label>
+                <input  required type="number" name="" id="Glovo">
+                <button class="open-button-Glovos">inserir/calcular Glovos</button>
             </div>
-            <div class="box-label-input">
-            <label for="Gasolina">Gasolina €</label>
+                <div class="box-label-input">
+                <label for="Gasolina">Gasolina €</label>
             <input  required type="number" name="" id="Gasolina">
         </div>
         <div class="box-resultado-contas">
             <p id="resMsg">€</p>
             <p id="resConta" class="piscar-resultado-alerta"></p>
         </div>
-        <div>
-            <button type="submit">SUBMETER</button>
+        <div class="box-icone-submeter">
+            <button type="submit" onclick="somarInputs()">SUBMETER</button>
         </div>
         <div class="box-icone-voltar">
             <a href="index.html"><i class="fa-solid fa-circle-chevron-left">Voltar</i></a>
