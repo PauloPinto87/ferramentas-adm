@@ -38,18 +38,7 @@
             <label for="">5ºTroco</label>
             <input type="number" name="" id="5ºTroco">
         </div>
-        <div class="box-troco">
-            <label for="">6ºTroco</label>
-            <input type="number" name="" id="6ºTroco">
-        </div>
-        <div class="box-troco">
-            <label for="">7ºTroco</label>
-            <input type="number" name="" id="7ºTroco">
-        </div>
-        <div class="box-troco">
-            <label for="">8ºTroco</label>
-            <input type="number" name="" id="8ºTroco">
-        </div>
+
         <button class="close-button" onclick="somarTrocos()">Somar trocos e fechar</button>
             <p id="totalTrocos">€</p>      
 
@@ -66,27 +55,30 @@
             </div>
             <div class="box-label-input">
             <label for="Gastos">Gastos (MB) €</label>
-            <input type="number" name="" id="Gastos">
+            <input required type="number" name="" id="Gastos">
             </div>
             <div class="box-label-input">
             <label for="Outros">Outros €</label>
-            <input type="number" name="" id="Outros">
+            <input  required type="number" name="" id="Outros">
             </div>
             <div class="box-label-input">
             <label for="Uber">Uber €</label>
-            <input type="number" name="" id="Uber">
+            <input  required type="number" name="" id="Uber">
             </div>
             <div class="box-label-input">
             <label for="Glovo">Glovo €</label>
-            <input type="number" name="" id="Glovo">
+            <input  required type="number" name="" id="Glovo">
             </div>
             <div class="box-label-input">
             <label for="Gasolina">Gasolina €</label>
-            <input type="number" name="" id="Gasolina">
+            <input  required type="number" name="" id="Gasolina">
         </div>
         <div class="box-resultado-contas">
             <p id="resMsg">€</p>
             <p id="resConta" class="piscar-resultado-alerta"></p>
+        </div>
+        <div>
+            <button type="submit">SUBMETER</button>
         </div>
         <div class="box-icone-voltar">
             <a href="index.html"><i class="fa-solid fa-circle-chevron-left">Voltar</i></a>

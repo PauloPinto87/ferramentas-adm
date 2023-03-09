@@ -1,6 +1,7 @@
 const modal = document.querySelector('#modal')
 const openModal = document.querySelector('.open-button')
 const closeModal = document.querySelector('.close-button')
+let somaTroco = 0
 
 openModal.addEventListener('click', () => {
     modal.show()
@@ -13,7 +14,8 @@ closeModal.addEventListener('click', () => {
 function somarTrocos (){
     var inputTroco = document.getElementById('modal').childNodes
     var totalTrocos = document.getElementById('totalTrocos')
-    var somaTroco = 0
+    let somaTroco = 0
+
 
 
     for (passo = 1; passo < inputTroco.length-4; passo = passo + 2) {
@@ -24,6 +26,9 @@ function somarTrocos (){
     }
 
     totalTrocos.innerHTML = `€ ${somaTroco.toFixed(2)}`
+    var Troco = document.getElementById('Trocos')
+    Troco.value = somaTroco.toFixed(2)
+
 }
 
 function somarInputs(){
