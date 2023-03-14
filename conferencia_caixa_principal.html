@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/a97a6cfbcf.js" crossorigin="anonymous"></script>
+
+    <title>Ferramentas Adiministrativas</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section class="section-conferencia-caixa-principal">
+        <dialog class="modalGenerico" id="modalGenerico" onchange="somarGenerico()">
+            <div class="box-Generico">
+                <label for="1ºMB">1ºMB</label>
+                <input type="number" name="" id="1ºMB">
+            </div>
+            <div class="box-MB">
+            <label for="2ºMB">2ºMB</label>
+            <input type="number" name="" id="2ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="3ºMB">3ºMB</label>
+            <input type="number" name="" id="3ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="4ºMB">4ºMB</label>
+            <input type="number" name="" id="4ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="5ºMB">5ºMB</label>
+            <input type="number" name="" id="5ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="6ºMB">6ºMB</label>
+            <input type="number" name="" id="6ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="7ºMB">7ºMB</label>
+            <input type="number" name="" id="7ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="8ºMB">8ºMB</label>
+            <input type="number" name="" id="8ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="10ºMB">10ºMB</label>
+            <input type="number" name="" id="10ºMB">
+        </div>
+        <div class="box-MB">
+            <label for="11ºMB">11ºMB</label>
+            <input type="number" name="" id="11ºMB">
+        </div>
+
+        <button class="close-button-Generico" onclick="somarGenerico()">Inserir Generico e fechar</button>
+            <p id="totalGenerico">€</p>      
+
+        </dialog>
+        <dialog class="modalNotasMoedas" id="modalNotasMoedas" onchange="somarNotasMoedas()">
+            <div class="box-NotasMoedas">
+                <label for="nota50">QNT Notas 50 €</label>
+                <input type="number" name="" id="nota50">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="nota20">QNT Notas 20 €</label>
+                <input type="number" name="" id="nota20">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="nota10">QNT Notas 10 €</label>
+                <input type="number" name="" id="nota10">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="nota5">QNT Notas 5 €</label>
+                <input type="number" name="" id="nota5">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda2">QNT Moedas 2 €</label>
+                <input type="number" name="" id="moeda2">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda1">QNT Moedas 1 €</label>
+                <input type="number" name="" id="moeda1">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda0x50">QNT Moedas 50 cênt.</label>
+                <input type="number" name="" id="moeda0x50">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda0x20">QNT Moedas 20 cênt.</label>
+                <input type="number" name="" id="moeda0x20">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda0x10">QNT Moedas 10 cênt.</label>
+                <input type="number" name="" id="moeda0x10">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda0x05">QNT Moedas 5 cênt.</label>
+                <input type="number" name="" id="moeda0x05">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda0x02">QNT Moedas 2 cênt.</label>
+                <input type="number" name="" id="moeda0x02">
+            </div>
+            <div class="box-NotasMoedas">
+                <label for="moeda0x01">QNT Moedas 1 cênt.</label>
+                <input type="number" name="" id="moeda0x01">
+            </div>
+            <button class="close-button-NotasMoedas" onclick="somarNotasMoedas()">Somar dinheiro e fechar</button>
+            <p id="totalNotasMoedas">€</p>      
+        </dialog>
+
+
+        <div class="box-divs-input">
+            <div class="box-label-input">
+                <label for="Vendas">Vendas até o momento €</label>
+                <input type="number" name="" id="Vendas">
+            </div>
+            <div class="box-label-input">
+                <label for="Generico">Fecho Genérico MB €</label>
+                <input type="number" name="" id="Generico">
+                <button class="open-button-Generico">inserir/calcular MBs</button>
+            </div>
+           
+            <div class="box-label-input">
+                <label for="NotasMoedas">Notas e Moedas €</label>
+                <input  required type="number" name="" id="NotasMoedas">
+                <button class="open-button-NotasMoedas">inserir Notas e Moedas</button>
+            </div>
+        <div class="box-resultado-contas">
+            <p id="resMsg">€</p>
+            <p id="resConta" class="piscar-resultado-alerta"></p>
+        </div>
+        <div class="box-icone-submeter">
+            <button type="submit" onclick="somarInputs()">SUBMETER</button>
+        </div>
+        <div class="box-icone-voltar">
+            <a href="conferencia_caixa_menu.html"><i class="fa-solid fa-circle-chevron-left">Voltar</i></a>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="scripts/conferencia_caixa_principal.js"></script>
+</body>
+</html>

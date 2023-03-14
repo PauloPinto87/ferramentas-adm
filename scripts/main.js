@@ -31,6 +31,7 @@ closeModalGlovos.addEventListener('click', () => {
 modalGlovos.close()
 })
 
+
 /* Calcula o TROCOS e poem no input correspondente */
 let somaTroco = 0
 
